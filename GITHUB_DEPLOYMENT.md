@@ -1,59 +1,44 @@
-# Pylon — GitHub Repository & Deployment Guide
+# Pylon — GitHub Repository and Deployment Guide
 
-This document defines how the Pylon website (`bypylon.com`) is hosted on GitHub Pages for **$0/month**, with automatic deployments, version control, and free SSL.
+This document defines how the Pylon website (`bypylon.com`) is hosted on GitHub Pages for $0/month, with automatic deployments, version control, and free SSL.
 
 ---
 
-## 🛠️ Step-by-Step: Initializing & Deploying on GitHub
+## Active Repository and Deployment Status
 
-Your machine already has the GitHub CLI (`gh`) authenticated with:
-* **Active Account:** `mukpostproduction-debug` (or your Pylon organization).
+* Repository URL: https://github.com/mukpostproduction-debug/bypylon
+* Production URL: https://bypylon.com
+* Redirect URL: http://www.bypylon.com -> https://bypylon.com
+* Branch: `main`
+* Build Engine: GitHub Pages (Root path `/`)
+* SSL Certificate: Let's Encrypt (Issued, HTTPS Enforced)
+* Hosting Cost: $0.00 / month
 
-### Step 1: Initialize Git in the Website Folder (or Root)
-You can deploy either the entire Pylon workspace (with `website/` configured for Pages) or create a dedicated repository specifically for the public site:
+---
 
-**Option A (Recommended: Dedicated Public Site Repo `bypylon`):**
+## Daily Deployment Workflow
+
+Whenever updates are made to HTML, CSS, assets, or director portfolios in `website/`:
+
 ```bash
-# Navigate to the website folder
 cd /Users/jacksonmcmurdo/Desktop/Pylon/website
-
-# Initialize git repository
-git init -b main
 git add .
-git commit -m "Initial commit: Pylon web platform for bypylon.com"
-
-# Create public GitHub repository via gh CLI:
-gh repo create bypylon --public --source=. --remote=origin --push
+git commit -m "Update portfolio reels and crew credits"
+git push origin main
 ```
 
-### Step 2: Enable GitHub Pages & Custom Domain
-Once the repository is pushed:
-```bash
-# Enable GitHub Pages on main branch root:
-gh api --method POST -H "Accept: application/vnd.github+json" \
-  /repos/mukpostproduction-debug/bypylon/pages \
-  -f "source[branch]=main" -f "source[path]=/"
-
-# Set the custom domain to bypylon.com:
-gh api --method PUT -H "Accept: application/vnd.github+json" \
-  /repos/mukpostproduction-debug/bypylon/pages \
-  -f "cname=bypylon.com"
-```
-
-*(Or via GitHub Web UI: Go to **Settings** → **Pages** → Source: `Deploy from a branch (main / root)` → Custom domain: `bypylon.com` → Save).*
-
-### Step 3: Enforce HTTPS
-Once GitHub verifies the DNS records on Spaceship (usually 5–15 minutes):
-* Check the box: **"Enforce HTTPS"**.
-* GitHub will automatically request and renew a free Let's Encrypt SSL certificate.
+GitHub Pages will automatically build and publish changes to `https://bypylon.com` within 30-45 seconds.
 
 ---
 
-## 🔄 Daily Deployment Workflow
-Whenever you make updates to the HTML, CSS, or portfolio:
+## Local Staging for Preview
+
+To preview the website locally before committing or during meetings without publishing to production:
+
 ```bash
-git add .
-git commit -m "Update portfolio reel and director roster"
-git push origin main
-# GitHub Pages deploys live to bypylon.com in ~30 seconds automatically!
+cd /Users/jacksonmcmurdo/Desktop/Pylon/website
+python3 -m http.server 8000
 ```
+
+Open `http://localhost:8000` in any browser.
+
