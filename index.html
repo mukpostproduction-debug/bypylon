@@ -3,426 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PYLON COLLECTIVE — Commercial & Film Production</title>
-  <meta name="description" content="Toronto-based commercial and narrative film production collective. Directing, cinematography, art fabrication, and master post-production by Muk Post.">
-  
-  <link rel="icon" type="image/png" href="assets/logo.png">
-  <link rel="stylesheet" href="css/main.css">
+  <title>Pylon — Coming Soon</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      color: #000000;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+    }
+    .container {
+      text-align: center;
+      padding: 2rem;
+    }
+    .brand {
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: #000000;
+      margin-bottom: 0.5rem;
+    }
+    .status {
+      font-size: 0.85rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: lowercase;
+      color: #888888;
+    }
+  </style>
 </head>
 <body>
-
-  <!-- Site Navigation -->
-  <header class="site-header">
-    <div class="container nav-wrapper">
-      <a href="#" class="brand-link">
-        <img src="assets/logo.png" alt="Pylon Collective" class="brand-logo-img">
-        <span class="brand-name">PYLON <span>COLLECTIVE</span></span>
-      </a>
-
-      <nav class="main-nav" id="mainNav">
-        <a href="#work" class="nav-link active">Selected Work</a>
-        <a href="#team" class="nav-link">The Collective</a>
-        <a href="#post" class="nav-link">Post Pipeline</a>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#contact" class="btn-cta">Start A Project</a>
-      </nav>
-
-      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">☰</button>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero-section">
-    <div class="container hero-content">
-      <div class="hero-pill">Toronto Film & Commercial Collective</div>
-      <h1 class="hero-title">
-        <span class="text-gradient">STORIES CRAFTED WITH</span><br>
-        <span class="text-orange">PHYSICAL WEIGHT.</span>
-      </h1>
-      <p class="hero-desc">
-        A multidisciplinary production collective based in Toronto. Combining director-led vision, physical set fabrication, tactile screenprinting, and cinema-grade color finishing through Muk Post.
-      </p>
-      <div class="hero-actions">
-        <a href="#work" class="btn-cta">View Selected Work</a>
-        <a href="#contact" class="btn-secondary">Request Commercial Deck</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Selected Works Section -->
-  <section class="works-section" id="work">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Portfolio Showcase</span>
-        <h2 class="section-title">SELECTED WORKS</h2>
-        <p style="color: var(--text-secondary); max-width: 500px;">Narrative films, commercial campaigns, and music visuals finished across our collective network.</p>
-      </div>
-
-      <!-- Category Filter -->
-      <div class="filter-bar">
-        <button class="filter-btn active" data-filter="all">All Works</button>
-        <button class="filter-btn" data-filter="narrative">Narrative & Shorts</button>
-        <button class="filter-btn" data-filter="commercial">Commercial & Branded</button>
-        <button class="filter-btn" data-filter="music">Music Videos</button>
-        <button class="filter-btn" data-filter="art">Art & Physical Merch</button>
-      </div>
-
-      <!-- Works Grid -->
-      <div class="works-grid" id="worksGrid">
-        
-        <!-- Work 1: Bystanders -->
-        <article class="work-card" data-category="narrative" data-video="">
-          <div class="work-thumb">
-            <div style="background: linear-gradient(45deg, #120e0c, #2b170e); width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:#ff5500; font-family:'Unbounded'; font-weight:800; font-size:1.4rem;">
-              BYSTANDERS
-            </div>
-            <div class="play-badge">▶</div>
-          </div>
-          <div class="work-details">
-            <span class="work-category-badge">Narrative Short & Screenings</span>
-            <h3 class="work-title">Bystanders</h3>
-            <div class="work-credits">
-              <div><span class="credit-highlight">Director:</span> Dickson Ntiamoah & Mason Cline</div>
-              <div><span class="credit-highlight">Cinematography:</span> Dario Butera</div>
-              <div><span class="credit-highlight">Color Finishing:</span> Muk Post</div>
-            </div>
-          </div>
-        </article>
-
-        <!-- Work 2: Music Video Visual -->
-        <article class="work-card" data-category="music" data-video="">
-          <div class="work-thumb">
-            <div style="background: linear-gradient(45deg, #0e1217, #152238); width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:#60a5fa; font-family:'Unbounded'; font-weight:800; font-size:1.2rem; text-align:center; padding:16px;">
-              JESSICA BINNS &mdash; VISUALS
-            </div>
-            <div class="play-badge">▶</div>
-          </div>
-          <div class="work-details">
-            <span class="work-category-badge">Music Video</span>
-            <h3 class="work-title">Solitary Resonance</h3>
-            <div class="work-credits">
-              <div><span class="credit-highlight">Director:</span> Jordan Wong</div>
-              <div><span class="credit-highlight">Music & Production Design:</span> Jessica Binns</div>
-              <div><span class="credit-highlight">Color & Mastering:</span> Muk Post</div>
-            </div>
-          </div>
-        </article>
-
-        <!-- Work 3: Commercial Fashion -->
-        <article class="work-card" data-category="commercial" data-video="">
-          <div class="work-thumb">
-            <div style="background: linear-gradient(45deg, #111116, #22222a); width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:#f8fafc; font-family:'Unbounded'; font-weight:800; font-size:1.3rem;">
-              CORE WINTER // 26
-            </div>
-            <div class="play-badge">▶</div>
-          </div>
-          <div class="work-details">
-            <span class="work-category-badge">Commercial Fashion</span>
-            <h3 class="work-title">North Apparel Spec</h3>
-            <div class="work-credits">
-              <div><span class="credit-highlight">Director:</span> Mason Cline</div>
-              <div><span class="credit-highlight">Producer & Gaffer:</span> Declan McKenna</div>
-              <div><span class="credit-highlight">Post & Grade:</span> Muk Post</div>
-            </div>
-          </div>
-        </article>
-
-        <!-- Work 4: Narrative Short Film -->
-        <article class="work-card" data-category="narrative" data-video="">
-          <div class="work-thumb">
-            <div style="background: linear-gradient(45deg, #171113, #301720); width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:#f43f5e; font-family:'Unbounded'; font-weight:800; font-size:1.3rem;">
-              LIMINAL HOURS
-            </div>
-            <div class="play-badge">▶</div>
-          </div>
-          <div class="work-details">
-            <span class="work-category-badge">Narrative Short</span>
-            <h3 class="work-title">Liminal Hours</h3>
-            <div class="work-credits">
-              <div><span class="credit-highlight">Writer & Director:</span> Maya Chariandy</div>
-              <div><span class="credit-highlight">Cinematography:</span> Dario Butera</div>
-              <div><span class="credit-highlight">Color Finishing:</span> Muk Post</div>
-            </div>
-          </div>
-        </article>
-
-        <!-- Work 5: Fitness & Movement Spec -->
-        <article class="work-card" data-category="commercial" data-video="">
-          <div class="work-thumb">
-            <div style="background: linear-gradient(45deg, #0f1614, #142a22); width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:#34d399; font-family:'Unbounded'; font-weight:800; font-size:1.2rem;">
-              PRECISION & MOVEMENT
-            </div>
-            <div class="play-badge">▶</div>
-          </div>
-          <div class="work-details">
-            <span class="work-category-badge">Commercial Fitness</span>
-            <h3 class="work-title">Movement & Practice</h3>
-            <div class="work-credits">
-              <div><span class="credit-highlight">Director / DP:</span> Mason Cline</div>
-              <div><span class="credit-highlight">Camera Operator:</span> Declan McKenna</div>
-              <div><span class="credit-highlight">Post Supervisor:</span> Jackson McMurdo</div>
-            </div>
-          </div>
-        </article>
-
-        <!-- Work 6: Physical Art & Merch -->
-        <article class="work-card" data-category="art" data-video="">
-          <div class="work-thumb">
-            <div style="background: linear-gradient(45deg, #18140f, #332110); width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:#fbbf24; font-family:'Unbounded'; font-weight:800; font-size:1.2rem; text-align:center; padding:16px;">
-              PYLON APPAREL & CYANOTYPES
-            </div>
-            <div class="play-badge">▶</div>
-          </div>
-          <div class="work-details">
-            <span class="work-category-badge">Textile & Physical Art</span>
-            <h3 class="work-title">Varsity & Screenprint Editions</h3>
-            <div class="work-credits">
-              <div><span class="credit-highlight">Lead Designer:</span> Dickson Ntiamoah</div>
-              <div><span class="credit-highlight">Set Piece Fabrication:</span> Jessica Binns</div>
-              <div><span class="credit-highlight">Process Film:</span> Pylon Collective</div>
-            </div>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Post-Production Anchor Banner (Muk Post) -->
-  <section class="container" id="post">
-    <div class="muk-anchor-banner">
-      <div>
-        <span class="section-tag">Aesthetic Anchor</span>
-        <h2 class="anchor-title">FINISHING BY MUK POST</h2>
-        <p class="anchor-text">
-          Every Pylon film and commercial campaign is routed through Muk Post’s dedicated DaVinci Resolve color science pipeline. We pair rich 35mm print emulations and grain texture with modern HDR delivery to give our collective outputs unmistakable visual authority.
-        </p>
-        <div class="pipeline-specs">
-          <div class="spec-box">
-            <div class="spec-label">Color Science</div>
-            <div class="spec-val">ACES / DaVinci Wide Gamut</div>
-          </div>
-          <div class="spec-box">
-            <div class="spec-label">Texture Finish</div>
-            <div class="spec-val">Kodak 2383 / 35mm Gate-Weave</div>
-          </div>
-          <div class="spec-box">
-            <div class="spec-label">Master Delivery</div>
-            <div class="spec-val">4K DCI ProRes 4444 XQ / Rec.709</div>
-          </div>
-          <div class="spec-box">
-            <div class="spec-label">Process Socials</div>
-            <div class="spec-val">4K 9:16 Vertical BTS Cutdowns</div>
-          </div>
-        </div>
-      </div>
-      <div style="display:flex; justify-content:center; align-items:center;">
-        <div style="border: 2px solid var(--accent-pylon); padding: 32px; border-radius: 12px; text-align: center; background: rgba(0,0,0,0.4); box-shadow: 0 0 30px var(--accent-glow);">
-          <div style="font-family:'Unbounded'; font-size:1.6rem; font-weight:900; margin-bottom:6px;">MUK POST</div>
-          <div style="font-size:0.85rem; color:var(--accent-pylon); font-weight:700; text-transform:uppercase; letter-spacing:0.1em;">Official Post Partner</div>
-          <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:12px;">Supervised by Jackson McMurdo</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- The Collective Team Section -->
-  <section class="team-section" id="team">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Meet The Crew</span>
-        <h2 class="section-title">THE COLLECTIVE</h2>
-        <p style="color: var(--text-secondary); max-width: 600px;">A specialized alliance of directors, cinematographers, fabricators, and post-production specialists.</p>
-      </div>
-
-      <div class="team-grid">
-        
-        <div class="member-card">
-          <div class="member-avatar">MC</div>
-          <h3 class="member-name">Mason Cline</h3>
-          <div class="member-role">Founder / Director / DP</div>
-          <p class="member-bio">Visual director specializing in high-energy commercial pacing, automotive, and narrative specs.</p>
-          <a href="#" class="member-link">View Portfolio &rarr;</a>
-        </div>
-
-        <div class="member-card">
-          <div class="member-avatar">JM</div>
-          <h3 class="member-name">Jackson McMurdo</h3>
-          <div class="member-role">Lead Colorist & Post Supervisor</div>
-          <p class="member-bio">Founder of Muk Post. Supervises color science, editorial pacing, finishing pipelines, and digital architecture.</p>
-          <a href="https://mukpost.com" target="_blank" class="member-link">Muk Post Studio &rarr;</a>
-        </div>
-
-        <div class="member-card">
-          <div class="member-avatar">DM</div>
-          <h3 class="member-name">Declan McKenna</h3>
-          <div class="member-role">Producer / Camera Op / Gaffer</div>
-          <p class="member-bio">Commercial producer and lighting specialist balancing logistics, budget optimization, and technical rigging.</p>
-          <a href="#" class="member-link">View Credits &rarr;</a>
-        </div>
-
-        <div class="member-card">
-          <div class="member-avatar">MC</div>
-          <h3 class="member-name">Maya Chariandy</h3>
-          <div class="member-role">Director / Writer / Actor</div>
-          <p class="member-bio">Narrative filmmaker with an intimate focus on character-driven human drama, performance, and independent storytelling.</p>
-          <a href="#" class="member-link">View Portfolio &rarr;</a>
-        </div>
-
-        <div class="member-card">
-          <div class="member-avatar">JW</div>
-          <h3 class="member-name">Jordan Wong</h3>
-          <div class="member-role">Director / Visual Collaborator</div>
-          <p class="member-bio">Music video and visual director crafting surreal, atmospheric imagery and stylized world-building.</p>
-          <a href="#" class="member-link">View Portfolio &rarr;</a>
-        </div>
-
-        <div class="member-card">
-          <div class="member-avatar">DB</div>
-          <h3 class="member-name">Dario Butera</h3>
-          <div class="member-role">Director of Photography</div>
-          <p class="member-bio">Master’s candidate and DP specializing in 35mm optical texture, controlled naturalism, and commercial camera movement.</p>
-          <a href="#" class="member-link">View Showreel &rarr;</a>
-        </div>
-
-        <div class="member-card">
-          <div class="member-avatar">DN</div>
-          <h3 class="member-name">Dickson Ntiamoah</h3>
-          <div class="member-role">Designer & Creative Producer</div>
-          <p class="member-bio">Creative producer, screenprinter, and apparel designer. Curator of the Bystanders independent screening series.</p>
-          <a href="#" class="member-link">View Merch Lab &rarr;</a>
-        </div>
-
-        <div class="member-card">
-          <div class="member-avatar">JB</div>
-          <h3 class="member-name">Jessica Binns</h3>
-          <div class="member-role">Musician & Production Designer</div>
-          <p class="member-bio">Multidisciplinary artist bridging sound design, original scoring, physical set fabrication, and oversized props.</p>
-          <a href="#" class="member-link">View Artworks &rarr;</a>
-        </div>
-
-        <div class="member-card">
-          <div class="member-avatar">DF</div>
-          <h3 class="member-name">Daniel Fusco</h3>
-          <div class="member-role">Camera & Creative</div>
-          <p class="member-bio">Cinematographer and camera specialist dedicated to technical framing, dynamic camera movement, and lighting.</p>
-          <a href="#" class="member-link">View Portfolio &rarr;</a>
-        </div>
-
-        <div class="member-card">
-          <div class="member-avatar">ME</div>
-          <h3 class="member-name">Misan Edema</h3>
-          <div class="member-role">Cinematography & Photography</div>
-          <p class="member-bio">Visual artist crafting high-contrast editorial photography, documentary cinematography, and cinematic portraits.</p>
-          <a href="#" class="member-link">View Portfolio &rarr;</a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- About / Philosophy Section -->
-  <section class="about-section container" id="about" style="margin-bottom: 80px;">
-    <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 48px; max-width: 900px; margin: 0 auto; text-align: center;">
-      <span class="section-tag">Collective Manifesto</span>
-      <h2 style="font-size: 2.2rem; margin-bottom: 20px;">BUILT ON COLLABORATION, NOT CONFORMITY.</h2>
-      <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.7; margin-bottom: 24px;">
-        Pylon Collective was founded at Toronto Metropolitan University to eliminate the artificial boundaries between departments. Rather than renting out isolated crew members, we operate as a unified filmmaking incubator: our commercial client work directly fuels our passion short films, music videos, and physical art exhibitions.
-      </p>
-      <div style="display: inline-block; background: rgba(255, 85, 0, 0.1); border: 1px solid rgba(255, 85, 0, 0.3); border-radius: 9999px; padding: 8px 24px; color: var(--accent-pylon); font-weight: 700; font-size: 0.9rem; text-transform: uppercase;">
-        The "Two for You, One for Me" Philosophy
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact & Commercial Bidding Form -->
-  <section class="contact-section" id="contact">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Direct Inquiries</span>
-        <h2 class="section-title">COMMISSION A PROJECT</h2>
-        <p style="color: var(--text-secondary);">Submit project details for commercial bids, music video treatments, or crew packages.</p>
-      </div>
-
-      <div class="contact-card">
-        <form id="inquiryForm">
-          <div class="form-group">
-            <label class="form-label" for="clientName">Name / Company</label>
-            <input type="text" id="clientName" name="name" class="form-input" placeholder="e.g. Agency Producer or Brand Lead" required>
-          </div>
-
-          <div class="form-group">
-            <label class="form-label" for="clientEmail">Email Address</label>
-            <input type="email" id="clientEmail" name="email" class="form-input" placeholder="name@company.com" required>
-          </div>
-
-          <div class="form-group">
-            <label class="form-label" for="projectType">Project Classification</label>
-            <select id="projectType" name="type" class="form-select">
-              <option value="commercial">Commercial / Branded Campaign</option>
-              <option value="music-video">Music Video Production</option>
-              <option value="narrative">Narrative Short / Indie Film</option>
-              <option value="post-production">Color Finishing / Post (Muk Post)</option>
-              <option value="art-merch">Set Fabrication / Apparel / Event</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label class="form-label" for="budgetTier">Estimated Budget Tier</label>
-            <select id="budgetTier" name="budget" class="form-select">
-              <option value="tier-1">$2,500 &ndash; $5,000 (Indie / Music Video)</option>
-              <option value="tier-2">$5,000 &ndash; $15,000 (Commercial Spec / Boutique)</option>
-              <option value="tier-3">$15,000 &ndash; $50,000+ (Full Commercial Production)</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label class="form-label" for="projectMsg">Project Brief & Target Dates</label>
-            <textarea id="projectMsg" name="brief" class="form-textarea" placeholder="Tell us about the concept, deliverables, shoot window, and technical needs..." required></textarea>
-          </div>
-
-          <button type="submit" class="form-btn">Submit Project Brief &rarr;</button>
-        </form>
-
-        <div id="formSuccessMsg" style="display: none; text-align: center; padding: 24px;">
-          <div style="font-size: 2.5rem; color: var(--accent-pylon); margin-bottom: 12px;">✓</div>
-          <h3 style="margin-bottom: 8px;">Brief Received</h3>
-          <p style="color: var(--text-secondary); font-size: 0.95rem;">A producer from Pylon Collective will follow up with scheduling and a customized proposal within 24 hours.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Site Footer -->
-  <footer class="site-footer">
-    <div class="container footer-content">
-      <div>
-        <div style="font-family:'Unbounded'; font-weight:800; color:#fff; font-size:1.1rem; margin-bottom:4px;">PYLON COLLECTIVE</div>
-        <div>Toronto, Ontario &bull; Commercial Production & Narrative Cinema</div>
-      </div>
-
-      <div class="footer-socials">
-        <a href="https://instagram.com/pyloncollective" target="_blank">Instagram</a>
-        <a href="mailto:info@pyloncollective.com">Email</a>
-        <a href="https://mukpost.com" target="_blank">Muk Post</a>
-      </div>
-
-      <div>&copy; 2026 Pylon Collective. Domain hosted by Muk Post.</div>
-    </div>
-  </footer>
-
-  <!-- Fullscreen Video Modal -->
-  <div class="modal-overlay" id="videoModal">
-    <div class="modal-container">
-      <button class="modal-close-btn" id="modalCloseBtn">&times;</button>
-      <div class="modal-video-box" id="modalVideoFrame"></div>
-      <div class="modal-body">
-        <h2 id="modalTitle" style="font-size: 1.4rem; margin-bottom: 8px;"></h2>
-        <div id="modalCredits" class="work-credits" style="border:none; padding:0;"></div>
-      </div>
-    </div>
-  </div>
-
-  <script src="js/main.js"></script>
+  <main class="container">
+    <div class="brand">Pylon</div>
+    <div class="status">coming soon</div>
+  </main>
 </body>
 </html>
