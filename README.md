@@ -1,0 +1,43 @@
+# Pylon — Web Engineering & Portfolio
+
+**Lead Engineer:** Jackson McMurdo (Head of Operations)  
+**Primary Domain:** `bypylon.com` (Registrar: Spaceship / Namecheap)  
+**Legacy Domain (Squarespace):** `pyloncollective.com` (Archived in `website/squarespace_archive/`)  
+**Host Target:** GitHub Pages / Cloudflare Pages ($0/mo)  
+**Developer Agent:** [`pylon-web-dev`](file:///Users/jacksonmcmurdo/Desktop/Pylon/.agents/skills/pylon-web-dev/SKILL.md)
+
+This directory contains the complete source code, responsive styling, DNS records, and deployment automation for `bypylon.com`.
+
+---
+
+## 📁 Architecture & Guides
+```
+website/
+├── index.html              <- Portfolio showcase, reel player & director roster
+├── CNAME                   <- Maps to bypylon.com
+├── DNS_CONFIG.md           <- Master DNS records (A & CNAME) for Spaceship
+├── GITHUB_DEPLOYMENT.md    <- Step-by-step GitHub Pages & gh CLI deployment
+├── backup_engine.py        <- Static mirror crawler for Squarespace
+├── squarespace_archive/    <- 102 MB full offline backup of legacy site
+├── css/                    <- Custom responsive styling
+├── js/                     <- Interactive video players & navigation
+└── assets/                 <- Web stills, logos, and fonts
+```
+
+---
+
+## 🌐 Quick DNS Settings for bypylon.com
+Points directly to GitHub Pages:
+* `A` Record `@`: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+* `CNAME` Record `www`: `<your-github-username>.github.io`
+*(Full details in [`website/DNS_CONFIG.md`](file:///Users/jacksonmcmurdo/Desktop/Pylon/website/DNS_CONFIG.md)).*
+
+---
+
+## 🛠️ Local Development
+```bash
+# Start local preview:
+cd /Users/jacksonmcmurdo/Desktop/Pylon/website
+python3 -m http.server 8000
+# Open http://localhost:8000
+```
